@@ -1,0 +1,42 @@
+<form action="/api/users" method="POST" id="add_user" class="form_add_user">
+    <div class="new_user">
+        <div class="form-group" style="display: flex; flex-direction: row; justify-content: space-between">
+            <label for="name" class="form_labels">Name</label>
+            <input type="hidden" name="id" value="" />
+            <input class="form_input" type="text" name="name" value="" placeholder="Name" />
+        </div>
+        <div class="form-group" style="display: flex; flex-direction: row; justify-content: space-between">
+            <label for="Email" class="form_labels">Email</label>
+            <input class="form_input" type="text" name="email" value="" placeholder="example@gmail.com" />
+        </div>
+        <div class="form-group">
+            <label for="gender" class="form_labels">Gender</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Male" />
+                <label for="radio-2" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Female" />
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="form_labels">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Active" />
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Inactive" />
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+        </div>
+
+        <div class="form-group" style="display: flex; flex-direction: row-reverse">
+            <button type="submit" class="form_submit_button btn text-dark update">
+        Save
+      </button>
+        </div>
+    </div>
+</form>
